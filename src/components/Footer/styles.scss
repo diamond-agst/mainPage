@@ -1,0 +1,162 @@
+.footer{
+    background-image: url("../../assets/images/Footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 570px;
+    .footerWrapper{
+        background: radial-gradient(127.44% 127.44% at 50% 127.44%, #000000 0%, #000000 52.97%, rgba(0, 0, 0, 0.19) 72.85%, rgba(255, 255, 255, 0) 86.68%, rgba(255, 255, 255, 0) 100%);
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0px 140px 96px 140px;
+        .footerLeft{
+            h1{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+                letter-spacing: 0.01em;
+                color: #3463F8;  
+                text-align: left;
+                margin-top: 24px;
+            }
+            
+        }
+        div{
+            &:first-child{
+                p{
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 25px;
+                    letter-spacing: 0.01em;
+                    text-align: left;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        div{
+            &:last-child{
+                p{
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 25px;
+                    /* identical to box height */
+
+                    letter-spacing: 0.01em;
+
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .contactBlock{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .socialMedia{
+            display: flex;
+            a{
+                display: block;
+                margin-left: 16px;
+                margin-top: 26px;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .footer{
+        background-position: inherit !important;
+    }
+    .footerWrapper{
+        align-items: baseline !important;
+        justify-content: flex-start !important;
+        flex-direction: column-reverse;
+        padding: 0px 16px 45px 16px !important;
+        div{
+            &:first-child{
+                p{
+                    font-size: 16px !important;
+                    line-height: 22px !important
+                }
+            }
+            &:last-child{
+                p{
+                    font-size: 15px !important;
+                    line-height: 20px !important;
+                }
+            }
+        }
+    }
+    .footerLeft{
+        display: flex;
+        flex-direction: column-reverse;
+        h1{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px !important;
+            line-height: 22px !important;
+            /* identical to box height */
+            margin-bottom: 16px;
+            letter-spacing: 0.01em;
+            
+            color: #3463F8;
+        }
+    }
+    .contactBlock{
+        align-items: flex-start !important;
+        margin-bottom: 88px;
+        div{
+            a{
+                &:first-child{
+                    margin-left: 0 !important;
+                }
+            }
+            img{
+                margin-left: 0 !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer{
+        background-size: 490% !important;
+        background-position: center;
+        background-position-x: -364px;
+        background-position-y: 23px;
+        height: 670px !important;
+    }
+    .footerWrapper{
+        background-image: url(../../assets/images/Gradient.png) !important;
+        background-size: cover !important;
+    }
+    .contactBlock{
+        margin-bottom: 0px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer{
+        height: 670px !important;
+        background-image: url(../../assets/images/mainFooter.png) !important;
+        background-size: cover !important;
+        background-position: center;
+        background-position-x: 0 !important;
+        background-position-y: 0 !important;
+    }
+}

@@ -1,0 +1,256 @@
+.canDoBackground{
+    background: #F8F8FB;
+}
+
+.canDoWrapper{
+    background: #0C0C0C;
+    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    padding: 110px 0px;
+    .canDoBlock{
+        width: 1165px;
+        .canDoHeading{
+            margin-bottom: 88px;
+            h1{
+                font-family: 'Druk Wide Bold';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 63px;
+                letter-spacing: 0.01em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+        .canDoBlocksRow{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            &:first-child{
+                .canDoItem{
+                    &:nth-child(1){
+                        &:hover{
+                            background-image: url(../../assets/images/backgroundCanDo1.png);
+                            span{
+                                font-weight: 700;
+                                color: #3463F8
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        &:hover{
+                            background-image: url(../../assets/images/backgroundCanDo2.png);
+                            span{
+                                font-weight: 700;
+                                color: #3463F8
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        &:hover{
+                            background-image: url(../../assets/images/backgroundCanDo3.png);
+                            span{
+                                font-weight: 700;
+                                color: #3463F8
+                            }
+                        }
+                    }
+                    &:hover{
+                        background-position: bottom;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        border: 3px solid #FFFFFF;
+                    }
+                }
+            }
+            &:last-child{
+                margin-bottom: 0px;
+                .canDoItem{
+                    &:nth-child(1){
+                        &:hover{
+                            background-image: url(../../assets/images/backgroundCanDo4.png);
+                            span{
+                                font-weight: 700;
+                                color: #3463F8
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        &:hover{
+                            background-image: url(../../assets/images/backgroundCanDo5.png);
+                            span{
+                                font-weight: 700;
+                                color: #3463F8
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        &:hover{
+                            background-image: url(../../assets/images/backgroundCanDo6.png);
+                            span{
+                                font-weight: 700;
+                                color: #3463F8
+                            }
+                        }
+                    }
+                    &:hover{
+                        background-position: top;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        border: 3px solid #FFFFFF;
+                    }
+                }
+            }
+            .canDoItem{
+                background: #0C0C0C;
+                border: 3px solid #3463F8;
+                border-radius: 21px;
+                padding: 40px 0px 66px 40px;
+                width: 360px; 
+                margin-right: 40px;
+                &:last-child{
+                    margin-right: 0px !important;
+                }
+                .canDoBlockBackground{
+                    h1{
+                        font-family: 'Druk Wide Bold';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 34px;
+                        line-height: 44px;
+                        letter-spacing: 0.01em;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        margin-bottom: 40px;
+                    }
+                    p{
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 27px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.canDoMobileBlock{
+    display: none;
+}
+
+@media screen and (max-width: 1275px) {
+    .canDoWrapper{
+        padding: 110px 16px !important;
+        .canDoItem{
+            width: fit-content !important;
+            padding: 26px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .ellipsis-loading{
+        display: none !important;
+    }
+    .canDoWrapper{
+        padding: 48px 16px !important;
+        .canDoHeading{
+            margin-bottom: 48px !important;
+            h1{
+                font-weight: 700 !important;
+                font-size: 32px !important;
+                line-height: 42px !important;
+                text-align: center !important;
+                letter-spacing: 0.01em !important;
+                text-transform: uppercase !important;
+                br{
+                    display: none;
+                }
+            }
+        }
+        .canDoMobileBlock{
+            display: block !important;
+            .mobileCanItem{
+                border: 2.5px solid #3463F8;
+                border-radius: 16px;
+                margin-top: 16px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: right;
+                .headingBlockCanMobile{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 24px;
+                    h1{
+                        font-family: 'Druk Wide Bold';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 26px;
+                        letter-spacing: 0.01em;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+                    img{
+                        position: relative;
+                        z-index: 9999;
+                        cursor: pointer;
+                        pointer-events: all !important;
+                    }
+                }
+                .textBlockCanMobile{
+                    padding: 0px 24px 24px 24px;
+                    p{
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #FFFFFF;  
+                    }
+                    
+                }
+            }
+        }
+        .canDoBlocks{
+            display: none !important;
+        }
+    }
+}
+
+@media screen and (min-width: 355px) and (max-width: 363px) {
+    .canDoMobileBlock{
+        & > div{
+            &:nth-child(1){
+                background-position-x: 145% !important;
+            }
+            &:nth-child(2){
+                background-position-x: 140% !important;
+            }
+            &:nth-child(3){
+                background-position-x: 150% !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 363px) and (max-width: 378px) {
+    .canDoMobileBlock{
+        & > div{
+            &:nth-child(1){
+                background-position-x: 113% !important;
+            }
+            &:nth-child(2){
+                background-position-x: 112% !important;
+            }
+            &:nth-child(3){
+                background-position-x: 135% !important;
+            }
+        }
+    }
+}

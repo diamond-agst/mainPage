@@ -1,0 +1,114 @@
+.communityBackground{
+    background-image: url(../../assets/images/communityImage.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    padding: 110px 0px;
+    .communityBlock{
+        .communityHeading{
+            margin-bottom: 100px;
+            h1{
+                font-family: 'Druk Wide Bold';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 63px;
+                text-align: center;
+                letter-spacing: 0.01em;
+                text-transform: uppercase;
+                color: #000000;
+            }
+        }
+        .communityContent{
+            width: 1000px;
+            height: 440px;
+            div{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 47px;
+                a{
+                    display: flex;
+                    align-items: center;
+                }
+                img{
+                    cursor: pointer;
+                    pointer-events: all !important;
+                }
+            }
+        }
+    }
+}
+
+.mobileCommunityBlock{
+    display: none;
+}
+
+.mobileEmptyBlock{
+    display: none;
+}
+
+.headingCommunityMobile{
+    display: none;
+}
+
+@media screen and (max-width: 1060px) {
+    .communityBackground{
+        padding: 48px 16px;
+    }
+    .communityHeading{
+        margin-bottom: 42px !important;
+        h1{
+            font-weight: 700 !important;
+            font-size: 33px !important;
+            line-height: 43px !important;
+            text-align: center !important; 
+            letter-spacing: 0.01em !important;
+        }
+    }
+    .headingCommunity{
+        display: none;
+    }
+    .headingCommunityMobile{
+        display: block !important;
+        font-weight: 700 !important;
+        font-size: 33px !important;
+        line-height: 43px !important; 
+    }
+    .communityContent{
+        display: none !important;
+    }
+    .mobileCommunityBlock{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        img{
+            margin: 20px;
+        }
+    }
+    .mobileEmptyBlock{
+        display: block !important;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .communityBackground{
+        background-size: 230% !important;
+    }
+    .mobileCommunityBlock{
+        a{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            margin: 20px 10px;
+            width: 65px;
+        }
+    }
+    .mobileEmptyBlock{
+        height: 100px !important;
+    }
+}

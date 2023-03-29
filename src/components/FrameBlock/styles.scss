@@ -1,0 +1,180 @@
+.frameBlock{
+    padding: 85px 0px 76px 0px !important;
+}
+
+.mainTextBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 584px;
+    .mainButtonBlock{
+        button{
+            background: #FFFFFF !important;
+            border: 2px solid #3463F8 !important;
+            border-radius: 8px !important;
+            color: #3463F8 !important;
+        }
+        button:hover{
+            background: #3463F8 !important;
+            border: 2px solid #3463F8 !important;
+            border-radius: 8px !important;
+            color: #fff !important;
+            padding: 16px 0px;
+        }
+        button:active{
+            background: #3463F8 !important;
+            border: 2px solid #3463F8 !important;
+            border-radius: 8px !important;
+            color: #fff !important;
+            padding: 16px 0px;
+        }
+        p{
+            br{
+                display: none;
+            }
+        }
+    }
+}
+
+.bottomButton{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .buySubtitle{
+        display: flex;
+        align-items: center;
+    }
+    a{
+        height: 100%;
+        display: block;
+        p{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600 !important;
+            font-size: 20px !important;
+            line-height: 27px !important; 
+            color: #3463F8 !important;
+            text-decoration: underline;
+            margin-top: 0px !important;
+        }
+    }
+    img{
+        cursor: pointer;
+        margin-right: 8px;
+    }
+}
+
+.bottomBlockBuy{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 56px 46px 0px;
+    width: 1230px;
+    .buySubtitle{
+        display: none;
+    }
+    a{
+        height: 100%;
+        display: block;
+        p{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600 !important;
+            font-size: 20px !important;
+            line-height: 27px !important;
+            color: #3463F8 !important;
+            text-decoration: underline;
+        }
+    }
+    img{
+        cursor: pointer;
+        margin-right: 15px;
+    }
+}
+
+.mobileFrame{
+    display: none;
+}
+
+.iframeindacoin{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 24px rgba(158, 174, 255, 0.25);
+    border-radius: 13px;
+    padding: 32px 24px 16px 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1265px) {
+    .bottomBlockBuy {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .bottomButton{
+        display: none !important;
+    }
+    .mainTextBlock{
+        height: auto !important;
+    }
+    .frameBlock{
+        display: block;
+        button{
+            max-width: 500px !important;
+        }
+        .mainTextBlock{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+            }
+        }
+        
+        .mainImg{
+            display: flex;
+            justify-content: center;
+            a{
+                img{
+                    pointer-events: all !important;
+                    cursor: pointer;
+                }
+            }
+        }
+        .iframeindacoin{
+            display: none !important;
+        }
+        .mobileFrame{
+            display: block !important;
+        }
+    }
+    .bottomBlockBuy{
+        justify-content: center;
+        padding: 0px 0px 46px 0px !important;
+        .buySubtitle{
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            p{
+                font-weight: 600 !important;
+                font-size: 16px !important;
+                line-height: 22px !important;
+            }  
+        }
+        
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .mainButtonBlock{
+        p{
+            br{
+                display: block !important;
+            }
+        }
+    }
+}

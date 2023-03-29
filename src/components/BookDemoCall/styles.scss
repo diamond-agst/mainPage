@@ -1,0 +1,234 @@
+.callBlock{
+    background: #0C0C0C;
+    border-radius: 18px;
+    .callBlockWrapperShort{
+        height: 750px;
+    }
+    .callBlockTextShort{
+        justify-content: flex-start;
+    }
+    .callBlockWrapper, .callBlockWrapperShort{
+        padding: 110px 40px 0px 140px;
+        display: flex;
+        justify-content: space-evenly;
+        .callBlockText, .callBlockTextShort{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .calendlyBlock{
+            width: 28%;
+        }
+        .callBlockHeadingShort{
+            margin-bottom: 145px;
+        }
+        .callBlockHeading, .callBlockHeadingShort{
+            width: 450px;
+            h1{
+                font-family: 'Druk Wide Bold';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 63px;
+                letter-spacing: 0.01em;
+                text-transform: uppercase;
+                text-align: left;
+                color: #FFFFFF;
+            }
+            p{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                margin-top: 47px;
+                color: #FFFFFF;
+                text-align: left;
+                margin-bottom: 40px;
+                br{
+                    display: none;
+                }
+            }
+        }
+        .callBlockSubtitle{
+            h1{
+                 font-family: 'Druk Wide Bold';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 38px;
+                letter-spacing: 0.01em;
+                text-transform: uppercase;
+                text-align: left;
+                color: #FFFFFF;
+                margin-bottom: 136px;
+            }
+           
+        }
+    }
+    .bottomBlockCall{
+        padding-bottom: 48px !important;
+        display: flex;
+        justify-content: space-between;
+        a{
+            display: block;
+            height: 100%;
+            position: relative;
+            z-index: 9999999;
+            width: fit-content;
+        }
+    }
+    .calendlyBlockMobile{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 2178px) {
+    .callBlockHeading{
+        margin-top: 0px !important;
+    }
+    .callBlockWrapperShort{
+        height: auto !important;
+        .callBlockHeadingShort{
+            margin-bottom: 0px !important;
+        }
+    }
+    .callBlockSubtitle{
+        margin-bottom: 0px !important;
+    }
+}
+
+@media screen and (min-width: 2148px) {
+    .callBlockHeading{
+        margin-top: 0px !important;
+    }
+    .callBlockSubtitle{
+        margin-bottom: 0px !important;
+    }
+    
+    .callBlockWrapper, .callBlockWrapperShort{
+        padding: 50px 10px 10px 140px !important;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .calendlyBlock{
+        display: none;
+    }
+    .callBlockHeading{
+        margin-top: 0px !important;
+    }
+    .callBlockHeadingShort{
+        margin-bottom: 0px !important;
+    }
+    .calendlyBlockMobile{
+        display: block !important;
+        height: 707px;
+    }
+    .callBlockSubtitle{
+        position: absolute;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .callBlockText, .callBlockTextShort{
+        position: relative;
+        width: 100%;
+        margin-top: 0px !important;
+        .callBlockHeading, .callBlockHeadingShort{
+            width: 100% !important;
+            h1, p{
+                text-align: center !important;
+            }
+            h1{
+                font-size: 32px !important;
+                line-height: 42px !important;
+            }
+            p{
+            font-size: 16px !important;
+            line-height: 22px !important;
+            margin-top: 32px !important;
+            }
+        }
+    }
+    .callBlockSubtitle{
+        h1{
+            text-align: center !important;
+            font-size: 20px !important;
+            line-height: 26px !important;
+            margin-bottom: 0px !important;
+        }
+    }
+    .callBlockWrapper, .callBlockWrapperShort{
+        padding: 48px 16px !important;
+    }
+    
+}
+
+@media screen and (max-width: 1300px) {
+    .callBlockWrapperShort{
+        height: 1200px !important;
+        .callBlockSubtitle{
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1031px) {
+    .callBlockWrapperShort{
+        height: 900px !important;
+    }
+    .callBlockHeadingShort{
+        p{
+            margin-bottom: 0px !important;
+        }
+    }
+    .callBlockWrapper{
+        .callBlockSubtitle{
+            position: absolute;
+            bottom: -20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }  
+    }
+    .callBlockHeadingShort{
+        .callBlockSubtitle{
+            position: absolute;
+            top: 750px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .callBlockHeadingShort{
+        .callBlockSubtitle{
+            position: absolute;
+            top: 600px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+    .callBlockWrapper{
+        .callBlockSubtitle{
+            position: absolute;
+            bottom: -10px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }  
+    }
+    .callBlockWrapperShort {
+        height: 750px !important;
+    }
+}
+

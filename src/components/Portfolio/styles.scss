@@ -1,0 +1,659 @@
+.portfolioWrapper{
+    background: #F8F8FB;
+    display: flex;
+    justify-content: center;
+    padding: 110px 0px;
+    .mobileText{
+        display: none;
+    }
+    .headingPortfolio{
+        margin-bottom: 72px;
+        h1{
+            font-family: 'Druk Wide Bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 63px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            color: #000;
+            margin-bottom: 56px;
+        }
+        .portfolioSubtitle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin-right: 28px;
+            }
+            p{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 30px;
+                color: #393939;
+            }
+        }
+    }
+    .portfolioBlock{
+        position: relative;
+        & > img{
+            width: 1500px;
+        }
+        .ellipdeBlock1{
+            position: absolute;
+            top: 29.5%;;
+            left: 43.8%;
+            cursor: pointer;
+            @keyframes blinker {
+                50% {
+                    box-shadow: 0px 0px 12px 8px #3463F8;
+                }
+              }
+            .ellipse1{
+                background: #3463F8;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+                box-shadow: 0px 0px 12px 3px #3463F8;
+                animation: blinker 1s linear infinite;
+            
+        }  
+        }
+        
+        .hoverBlock1{
+            background-image: url(../../assets/images/hoverBackgroundFirst.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: fit-content;
+            height: 140px;
+            position: absolute;
+            top: 13%;;
+            left: 43.1%;
+            h1{
+                padding: 24px 24px 8px 24px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 18px;
+                color: #ECECF1;
+            }
+            p{
+                padding: 0px 24px 30px 24px;
+                width: 300px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+                color: #ECECF1;
+            }
+        }
+        .ellipdeBlock2{
+            position: absolute;
+            top: 35%;;
+            left: 38.2%;
+            cursor: pointer;
+            z-index: 99999;
+            @keyframes blinker {
+                50% {
+                    box-shadow: 0px 0px 12px 8px #3463F8;
+                }
+              }
+            .ellipse2{
+                background: #3463F8;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                box-shadow: 0px 0px 12px 3px #3463F8;
+                animation: blinker 1s linear infinite;
+                cursor: pointer;
+                
+            }  
+        }
+        
+        .hoverBlock2{
+            background-image: url(../../assets/images/hoverBackgroundSecond.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: fit-content;
+            height: 130px;
+            position: absolute;
+            top: 26.8%;;
+            left: 20.2%;
+            h1{
+                padding: 24px 24px 8px 24px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 18px;
+                color: #ECECF1;
+            }
+            p{
+                padding: 0px 24px 24px 24px;
+                width: 300px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+                color: #ECECF1;
+            }
+        }
+        .ellipdeBlock3{
+            position: absolute;
+            top: 53%;;
+            left: 24.8%;
+            cursor: pointer;
+            @keyframes blinker {
+                50% {
+                    box-shadow: 0px 0px 12px 8px #3463F8;
+                }
+              }
+        .ellipse3{
+            background: #3463F8;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 12px 3px #3463F8;
+            cursor: pointer;
+            animation: blinker 1s linear infinite;
+        }  
+    }
+        .hoverBlock3{
+            background-image: url(../../assets/images/hoverBackgroundThird.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: fit-content;
+            height: 130px;
+            position: absolute;
+            top: 45%;;
+            left: 28%;
+            h1{
+                padding: 24px 24px 8px 36px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 18px;
+                color: #ECECF1;
+            }
+            p{
+                padding: 0px 24px 24px 36px;
+                width: 300px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+                color: #ECECF1;
+            }
+        }
+        .ellipdeBlock4{
+            position: absolute;
+            top: 32.5%;
+            right: 31%;
+            cursor: pointer;
+            @keyframes blinker {
+                50% {
+                    box-shadow: 0px 0px 12px 8px #3463F8;
+                }
+              }
+            .ellipse4{
+            background: #3463F8;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 12px 3px #3463F8;
+            cursor: pointer;
+            animation: blinker 1s linear infinite;
+            } 
+        }
+         
+        .hoverBlock4{
+            background-image: url(../../assets/images/hoverBackgroundFirst.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: fit-content;
+            height: 140px;
+            position: absolute;
+            top: 16%;
+            right: 15%;
+            h1{
+                padding: 24px 24px 8px 24px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 18px;
+                color: #ECECF1;
+            }
+            p{
+                padding: 0px 24px 30px 24px;
+                width: 300px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+                color: #ECECF1;
+            }
+        }
+    }
+    .buttonPortfolio{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+        button{
+            background: #3463FA;
+            border-radius: 8px;
+            width: 440px;
+            padding: 16px 0px;
+            border: none;
+            font-family: 'Druk Wide Bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        button:hover{
+            background: #FFFFFF;
+            border: 2.5px solid #3463F8;
+            border-radius: 8px;
+            padding: 13.5px 0px;
+            color: #3463F8;
+        }
+    }
+}
+
+.portfolioMobile{
+    display: none;
+}
+
+@media screen and (max-width: 1480px) {
+    .portfolioBlock{
+        & > img{
+            width: 1350px !important;
+        }
+        .hoverBlock1{
+            top: 12% !important;
+            left: 43% !important;
+        }
+        .hoverBlock2{
+            top: 26% !important;
+            left: 18.5% !important;
+        }
+        .hoverBlock3{
+            top: 44% !important;
+            left: 28% !important;
+        }
+        .hoverBlock4{
+            top: 14.5% !important;
+            right: 13.3% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .portfolioBlock{
+        & > img{
+            width: 1200px !important;
+        }
+        .hoverBlock1{
+            top: 11% !important;
+            left: 42.8% !important;
+        }
+        .hoverBlock2{
+            top: 25% !important;
+            left: 16.5% !important;
+        }
+        .hoverBlock3{
+            top: 43% !important;
+            left: 28.5% !important;
+        }
+        .hoverBlock4{
+            top: 13% !important;
+            right: 11% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .portfolioBlock{
+        & > img{
+            width: 950px !important;
+        }
+        .hoverBlock1{
+            top: 7% !important;
+            left: 42.6% !important;
+        }
+        .hoverBlock2{
+            top: 22.5% !important;
+            left: 10.5% !important;
+        }
+        .hoverBlock3{
+            top: 40.3% !important;
+            left: 28.5% !important;
+        }
+        .hoverBlock4{
+            top: 8% !important;
+            right: 6.3% !important;
+        }
+    }
+}
+
+.headingPortfolioMobile{
+    display: none;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #3463F8;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+
+@media screen and (max-width: 999px) {
+    .mobileText{
+        display: block !important;
+    }
+    .checkText{
+        display: none !important;
+    }
+    .portfolioWrapper{
+        padding: 48px 16px;
+        .headingPortfolio{
+            margin-bottom: 43px !important;
+            .headingPortfolioText{
+                display: none !important;
+            }
+            .headingPortfolioMobile{
+                display: block;
+                    font-weight: 700 !important; 
+                    font-size: 32px !important;
+                    line-height: 42px !important;
+                    text-align: center !important;
+                letter-spacing: 0.01em !important;
+                margin-bottom: 24px !important;
+            } 
+            }
+            .portfolioSubtitle{
+                img{
+                    width: 11px !important;
+                    height: 11px !important;
+                    margin-right: 16px !important;
+                }
+                p{
+                    font-style: normal;
+                    font-weight: 600 !important;
+                    font-size: 16px !important;
+                    line-height: 22px !important;
+                }
+            }
+        }
+        .buttonPortfolio{
+            margin-top: 45px !important;
+            a, button{
+                width: 100% !important;
+            }
+        }
+    .portfolioMobile{
+        display: flex !important;
+        justify-content: center;
+        .hoverBlockMobile1{
+            position: absolute;
+            background-image: url(../../assets/images/portfolioMobile1.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 140px;
+            padding: 24px;
+            bottom: 56px;
+            left: 46px;
+            h1{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 15px;
+                margin-bottom: 8px;
+
+
+                color: #ECECF1;
+            }
+            p{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 15px;
+
+                color: #ECECF1;
+            }
+        }
+        .ellipdeBlockMobile1{
+            position: absolute;
+            bottom: 14px;
+            left: 40.5%;
+            @keyframes blinker {
+                50% {
+                    box-shadow: 0px 0px 10px 4px #3463F8;
+                }
+              }
+            .ellipseMobile1{
+                width: 24px;
+                height: 24px;
+                background: transparent;
+                box-shadow: 0px 0px 10px #3463F8;
+                border-radius: 50%;
+                animation: blinker 1s linear infinite;
+            }
+        }
+        .hoverBlockMobile2{
+            position: absolute;
+            background-image: url(../../assets/images/portfolioMobile2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 140px;
+            padding: 24px;
+            bottom: 56px;
+            left: 18px;
+            h1{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 15px;
+                margin-bottom: 8px;
+
+
+                color: #ECECF1;
+            }
+            p{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 15px;
+
+                color: #ECECF1;
+            }
+        }
+        .ellipdeBlockMobile2{
+            position: absolute;
+            bottom: 19px;
+            left: 25.5%;
+            @keyframes blinker {
+                50% {
+                    box-shadow: 0px 0px 8px 9px #3463F8;
+                }
+              }
+            .ellipseMobile2{
+                width: 1px;
+                height: 1px;
+                background: #3463F8;
+                box-shadow: 0px 0px 8px 5px #3463F8;
+                border-radius: 50%;
+                animation: blinker 1s linear infinite;
+            }
+        }
+        .hoverBlockMobile3{
+            position: absolute;
+            background-image: url(../../assets/images/portfolioMobile3.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 150px;
+            width: 183px;
+            padding: 24px;
+            bottom: 44px;
+            right: 22px;
+            h1{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 15px;
+                margin-bottom: 8px;
+
+
+                color: #ECECF1;
+            }
+            p{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 15px;
+
+                color: #ECECF1;
+            }
+        }
+        .ellipdeBlockMobile3{
+            position: absolute;
+            bottom: 19px;
+            right: 25.5%;
+            @keyframes blinker {
+                50% {
+                    box-shadow: 0px 0px 8px 9px #3463F8;
+                }
+              }
+            .ellipseMobile3{
+                width: 1px;
+                height: 1px;
+                background: #3463F8;
+                box-shadow: 0px 0px 8px 5px #3463F8;
+                border-radius: 50%;
+                animation: blinker 1s linear infinite;
+            }
+        }
+        .hoverBlockMobile4{
+            position: absolute;
+            background-image: url(../../assets/images/portfolioMobile4.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 140px;
+            padding: 24px;
+            bottom: 54px;
+            right: 22px;
+            h1{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 15px;
+                margin-bottom: 8px;
+
+
+                color: #ECECF1;
+            }
+            p{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 15px;
+
+                color: #ECECF1;
+            }
+        }
+        .ellipdeBlockMobile4{
+            position: absolute;
+            bottom: 19px;
+            right: 11%;
+            @keyframes blinker {
+                50% {
+                    box-shadow: 0px 0px 8px 9px #3463F8;
+                }
+              }
+            .ellipseMobile4{
+                width: 1px;
+                height: 1px;
+                background: #3463F8;
+                box-shadow: 0px 0px 8px 5px #3463F8;
+                border-radius: 50%;
+                animation: blinker 1s linear infinite;
+            }
+        }
+    }
+    .contentPortfolio{
+        display: none !important;
+    }
+}

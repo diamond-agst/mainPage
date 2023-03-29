@@ -1,0 +1,139 @@
+.header{
+    img{
+        cursor: pointer;
+    }
+    background: #FFFFFF;
+    box-shadow: 0px -33px 65px #3463F8;
+    display: flex;
+    justify-content: center;
+}
+
+.headerWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 0px;
+    width: 1230px;
+    .leftHeaderBlock{
+        display: flex;
+        align-items: center;
+        width: 1220px;
+        .headerLogo{
+            margin-right: 75px;
+            margin-top: 3px;
+        }
+        .headerMenu{
+            display: flex;
+            align-items: center;
+            p{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000000;
+                margin-right: 48px;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
+
+.mobileMenu{
+    display: none;
+}
+
+.burderIcon{
+    display: none;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .header{
+        padding: 0px 16px;
+    }
+    .headerWrapper{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header{
+        box-shadow: 0px -33px 55px #3463F8 !important;
+    }
+    .headerMenu{
+        display: none !important;
+    }
+    .burderIcon{
+        display: block;
+    }
+    .accountIcon{
+        display: none;
+    }
+    .mobileMenu{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000000;
+        z-index: 9999;
+        overflow: hidden;
+        transform: translateX(100%);
+        transition: all 0.3s linear;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        .menuHeading{
+            width: 100%;
+            padding: 24px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .menuItems{
+            div{
+                &:last-child{
+                    h1{
+                        margin-bottom: 0px;
+                    }
+                }
+                h1{
+                    font-family: 'Druk Wide Bold';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 20px;
+                    margin-bottom: 40px;
+                    text-align: left;
+                    letter-spacing: 0.01em;
+                    text-transform: uppercase;
+                    padding: 0px 40px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .menuBottom{
+            padding: 0px 0px 48px 44px;
+            div{
+                display: flex;
+                align-items: center;
+                &:first-child{
+                    margin-bottom: 22px;
+                }
+                h1{
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-left: 20px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .openMenu{
+        transform: translateX(0) !important
+    }
+}

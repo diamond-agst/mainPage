@@ -1,0 +1,92 @@
+.jorneyWrapper{
+    display: flex;
+    justify-content: center;
+    padding: 110px 16px;
+    .jorneyBlock{
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        .headingJorney{
+            h1{
+                font-family: 'Druk Wide Bold';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 63px;
+                letter-spacing: 0.01em;
+                text-transform: uppercase;
+                color: #000000;
+            }
+        }
+        .jorneyForm{
+            display: block;
+            width: 440px;
+            input{
+                width: 100%;
+                background: #FFFFFF;
+                border: 1.5px solid #DADCE0;
+                border-radius: 8px;
+                padding: 11px 24px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                color: #000;
+                margin-bottom: 24px;
+                &:focus{
+                    border: 2px solid #3463F8;
+                }
+            }
+            button{
+                width: 100%;
+                background: #3463FA;
+                border-radius: 8px;
+                border: none;
+                padding: 16px;
+                font-family: 'Druk Wide Bold';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+            button:hover{
+                background: #FFFFFF;
+                border: 2.5px solid #3463F8;
+                border-radius: 8px;
+                padding: 13.5px 0px;
+                color: #3463F8;
+            }
+            button:focus-visible{
+                border: 2.5px solid #3463F8;
+                outline: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .jorneyWrapper{
+        padding: 88px 16px !important;
+    .jorneyBlock{
+        flex-direction: column;
+        align-items: center;
+        .headingJorney{
+            h1{
+                font-weight: 700 !important;
+                font-size: 33px !important;
+                line-height: 43px !important;
+                text-align: center !important;
+                margin-bottom: 48px;
+            }
+        }
+    }
+    .jorneyForm{
+        width: 100% !important;
+    }
+}
+}

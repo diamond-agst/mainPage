@@ -1,0 +1,372 @@
+.solution{
+    background: #0C0C0C;
+    padding: 110px 185px;
+    .solutionButton{
+        display: flex;
+        justify-content: center;
+        button{
+            padding: 16px 34px 
+        }
+        button:hover{
+            padding: 13.5px 34px
+            }
+    }
+    .solutinHeading{
+        h1{
+            font-family: 'Druk Wide Bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 63px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 88px; 
+        }
+    }
+    .solutionStartText{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+            color: #FFFFFF;
+            text-align: left;
+            margin-left: 166px;  
+        
+    }
+    .solutionContent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .solutionContentBlock{
+            display: flex;
+            h1{
+                font-family: 'Druk Wide Bold';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 52px;
+                text-align: center;
+                letter-spacing: 0.01em;
+                text-transform: uppercase;
+                margin-right: 60px;
+                color: #FFFFFF;
+                
+            }
+            div{
+                text-align: left;
+                h2{
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 33px;
+                    text-align: left;
+
+                    margin-bottom: 8px;
+                    color: #FFFFFF;
+                }
+                p{
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    text-align: left;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .solutionWrapperBlock{
+        background: #282828;
+        border-radius: 22px;
+    }
+    .solutionStepBlock{
+        background-image: url("../../assets/images/solutionMainImg.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 22px;
+        height: 536px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 42px 80px 42px 100px;
+        height: 512px;
+        div{
+            &:first-child{
+                h1{
+                    margin-right: 75px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    .solutionContentText{
+        height: 100%;
+        width: 735px;
+        margin-left: 24px;
+        display: flex;
+        align-items: center;
+    }
+    .solutionContentMenu{
+        & > div{
+            background: #282828;
+            border-radius: 22px;
+            width: 356px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            cursor: pointer;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            div{
+                width: 100%;
+                height: 100%;
+                padding: 25px;
+                background-image: url("../../assets/images/solutionOne.png");
+                background-size: cover;
+                border-radius: 22px;
+                display: flex;
+                justify-content: space-between;
+                h1{
+                    font-family: 'Druk Wide Bold';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 23px;
+                    line-height: 30px;
+                    letter-spacing: 0.01em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    text-align: left;
+                }
+                svg {
+                    fill: #5046e5;
+                }
+            
+            } 
+        }
+        
+    }
+    button{
+        background: #3463FA;
+        border-radius: 8px;
+        border: none;
+        width: auto;
+        padding: 16px 0px;
+        font-family: 'Druk Wide Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        cursor: pointer;
+        margin-top: 56px;
+      }
+      
+      button:hover{
+        background: #0C0C0C;
+        border: 2.5px solid #3463F8;
+        border-radius: 8px;
+        color: #3463F8;
+        padding: 13.5px 0px;
+      }
+}
+
+.mobileSolutionBlock{
+    display: none;
+}
+
+.solutinSubTitle{
+    display: none;
+}
+
+@media screen and (max-width: 1365px) {
+    .solution{
+        padding: 110px 16px !important;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .solutionContentMenu{
+        & > div:hover{
+            background: #6A6A6A !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .solutionContentMenu{
+        & > div:active{
+            background: #6A6A6A !important;
+        }
+    }
+    .solution{
+        padding: 48px 16px !important;
+    }
+    .solutionContentText{
+        display: none !important;
+    }
+    .solutinHeading{
+        h1{
+            font-size: 32px !important;
+            line-height: 42px !important;
+            margin-bottom: 32px !important;
+        }
+        
+    }
+
+    .solutinSubTitle{
+        display: block;
+        p{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            margin-bottom: 32px;
+            color: #FFFFFF;
+        }
+    }
+
+    .solutionButton{
+        button{
+            font-size: 18px !important;
+            line-height: 24px !important;
+            width: 100% !important;
+            margin-top: 32px !important;
+        }
+    }
+
+    .solutionContentMenu{
+        & > div{
+            margin-bottom: 16px !important;
+            &:last-child{
+                margin-bottom: 0px !important;
+            }
+            div{
+                align-items: center;
+                padding: 14px 24px !important;
+                h1{
+                    font-size: 16px !important;
+                    line-height: 21px !important;
+                }
+                img{
+                    width: 8px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+    
+    .mobileSolutionBlock{
+        display: block !important;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -100px;
+        transform: translateX(100%);
+        transition: all 0.3s linear;
+        background: #282828;
+        border-radius: 16px;
+        padding: 16px 0px;
+        & > div{
+            background-image: url("../../assets/images/solutionMainImg.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 100%;
+            display: flex;
+            .mobileSolutionArrow{
+                    img{
+                        transform: rotate(180deg);
+                        height: 18px;
+                        width: 8px;
+                        margin: 26px 24px;
+                    }
+                }
+            .mobileSolutionItems{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                div{
+                    position: relative;
+                    &:before{
+                        content: "1";
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 18px;
+                        position: absolute;
+                        top: -8px;
+                        left: -3px;
+                        text-align: right;
+                        color: #FFFFFF;
+                    }
+                    &:nth-child(2):before{
+                        content: "2";
+                    }
+                    &:nth-child(3):before{
+                        content: "3";
+                    }
+                    &:nth-child(4):before{
+                        content: "4";
+                    }
+                    h1{
+                        font-family: 'Druk Wide Bold';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 21px;
+                        display: flex;
+                        align-items: flex-end;
+                        letter-spacing: 0.01em;
+                        text-transform: uppercase;
+                        margin-bottom: 32px;
+                        color: #FFFFFF;
+                        position: relative;
+                        text-align: left;
+                        margin-left: 10px;
+                        &:last-child{
+                            margin-bottom: 0px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .solutionContentMenu{
+        width: 100%;
+        & > div{
+            width: 100% !important;
+            div{
+                background-position: right;
+                background-repeat: no-repeat;
+                background-size: contain !important;
+            }
+        }   
+    }
+       
+}
+
+@media screen and (max-width: 1110px) {
+    .solutionStepBlock{
+        background-size: cover !important;
+    }
+}
+
+@media screen and (min-width: 1364px) and (max-width: 1430px) {
+    .solutionStepBlock{
+        background-size: cover !important;
+    }
+}

@@ -1,0 +1,120 @@
+.orderBlock{
+    width: 440px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .inputOrder{
+        display: flex;
+        padding: 16px 24px 8px 24px;
+        border: 1.5px solid #DADCE0;
+        border-radius: 8px;
+        .bottomBlockInput{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .inputBlock{
+            p{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+            }
+            input{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 65px;
+                height: 65px;
+                border: none;
+                &:disabled{
+                    color: #000 !important;
+                    background: #fff !important;
+                }
+            }
+            
+            
+        }
+        .selectCur{
+            display: flex;
+            align-items: center;
+            border: 1px solid #DADCE0;
+            border-radius: 8px;
+            padding: 12px;
+            height: 48px;
+            cursor: pointer;
+            p{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 20px;
+            }
+            .curImage{
+                width: 24px !important;
+                height: 24px !important;
+                border-radius: 50%;
+            }
+            .arrowDownOrder{
+                width: 10px !important;
+                height: 6px !important;
+
+            }
+        }
+    }
+    .priceOne{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        p{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #666666;
+            margin: 12px 0px;
+        }
+    }
+    .feeBlock{
+        display: flex;
+        justify-content: center;
+        padding: 13px 24px;
+        background: #F8F8F8;
+        border: 1.5px solid #DADCE0;
+        border-radius: 13px;
+    }
+    .nextButton{
+        button{
+            width: 100%;
+            background: #3463FA;
+            border-radius: 8px;
+            border: none;
+            padding: 16px;
+            font-family: 'Druk Wide Bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            cursor: pointer;
+            margin-bottom: 24px;
+        }
+        button:hover{
+            background: #FFFFFF;
+            border: 2.5px solid #3463F8;
+            border-radius: 8px;
+            padding: 13.5px 0px;
+            color: #3463F8;
+        }
+        button:focus-visible{
+            border: 2.5px solid #3463F8;
+            outline: none !important;
+        }
+    }
+}
